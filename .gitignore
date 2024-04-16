@@ -1,4 +1,5 @@
-CityInfo/obj/
-CityInfo/bin/*
+obj/
+bin/
+logs/
 .idea
 .vs
