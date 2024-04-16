@@ -35,9 +35,7 @@ internal class Program
         builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
         builder.Services.AddSingleton<CitiesDataStore>();
 
-        builder.Services.AddDbContext<CityInfoContext>(
-            dbContextOptions => dbContextOptions.UseSqlite("Data Source=CityInfo.db")
-        );
+        builder.Services.AddDbContext<CityInfoContext>();
 
 #if DEBUG
         builder.Services.AddTransient<IMailService, LocalMailService>();
