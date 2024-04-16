@@ -13,6 +13,11 @@
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.3" />
     <PackageReference Include="microsoft.entityframeworkcore" Version="8.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlite" Version="8.0.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="8.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
     <PackageReference Include="serilog.sinks.console" Version="5.0.1" />
