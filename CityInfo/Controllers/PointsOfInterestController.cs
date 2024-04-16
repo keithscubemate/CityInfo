@@ -15,9 +15,12 @@ public class PointsOfInterestController(
     : ControllerBase
 {
 
-    private readonly ILogger<PointsOfInterestController> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-    private readonly IMailService _mailService = mailService ?? throw new ArgumentNullException(nameof(mailService));
-    private readonly CitiesDataStore _citiesDataStore = citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
+    private readonly ILogger<PointsOfInterestController> _logger =
+        logger ?? throw new ArgumentNullException(nameof(logger));
+    private readonly IMailService _mailService =
+        mailService ?? throw new ArgumentNullException(nameof(mailService));
+    private readonly CitiesDataStore _citiesDataStore = 
+        citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
 
     [HttpGet]
     public ActionResult<IEnumerable<PointOfInterestDto>> GetPointsOfInterest(int cityId)
